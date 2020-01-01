@@ -1,0 +1,112 @@
+.container {
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+}
+
+.chat {
+	width: 345px;
+	height: 455px;
+	border-radius: 3px 30px 0px 0px;
+	position: relative;
+	box-shadow: 0 0 30px #C0C0C0;
+}
+
+.chat img {
+	position: absolute;
+	left: -35px;
+	cursor: pointer;
+}
+
+.box-1 {
+	height: 80px;
+	background: #272727;
+	border-radius: 3px 30px 0px 0px;
+}
+
+.box-1 img {
+	position: absolute;
+	top: 15px;
+	left: 24px;
+}
+
+.box-1 .text-1 {
+	color: #f0f1f1;
+	position: absolute;
+	top: 23px;
+	left: 84px;
+}
+
+.box-1 .text-2 {
+	color: #b5b6b6;
+	position: absolute;
+	top: 46px;
+	left: 84px;
+}
+
+.box-2 {
+	width: 26px;
+	height: 37px;
+	background: #44bb6e;
+	float: right;
+	border-bottom-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+.box-3 {
+	display: inline-block;
+	padding: 10px 44px 12px 16px;
+	background: #3cb868;
+	border-radius: 3px;
+	position: absolute;
+	top: 270px;
+	left: 22px;
+}
+
+.chat .arrow {
+	border: 6px solid transparent; 
+	border-right: 6px solid #3cb868;
+	position: absolute;
+	top: 295px;
+	left: 9px;
+}
+
+.box-3 .message {
+	color: #ffffff;
+	line-height: 22px;
+	font-size: 16px;
+}
+
+.chat .time {
+	color: #a4afba;
+	font-size: 16px;
+	position: absolute;
+	top: 295px;
+	left: 290px;
+}
+
+.box-4 {
+	padding: 18px 26px 3px 22px;
+	background: #eef1f5;
+	position: absolute;
+	top: 375px;
+}
+
+.ask {
+	height: 60px;
+	width: 297px;
+	border-radius: 3px;
+	border: 2px solid #D3D3D3;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+.ask::placeholder {
+	font-size: 14px;
+	color: #a4afba;
+}
+
+.ask:focus {
+	border-color: #299f53;
+}
+
