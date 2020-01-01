@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>eShop</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+	<div id="app">
+  		<header class="header">
+    		<search :search-line.sync="searchLine"></search>
+      		<button class="cart-btn" @click="toggleCartVisibility">Корзина</button>
+      		<cart ref="cart" @delete='deleteFromCart'></cart>
+   		</header>
+ 		<main :class="{['search-active']: searchLine.length > 0}">
+    		<goods-list :goods="filteredGoods" @buy='buy'></goods-list>
+    		<div class="container">
+	<div class="chat">
+		<img id="close" src="img/close.png" alt="close">
+		<div class="box-1">
+			<div class="box-2"></div>
+			<img src="img/person.png" alt="pic">
+			<p class="text-1">Тэглайн</p>
+			<p class="text-2">Консультант</p>
+		</div>
+		<div class="arrow"></div>
+		<div class="box-3">
+			<span class="message">Здравствуйте! Я могу вам<br>
+			 чем-то помочь?</span>
+		</div>
+		<span class="time">9:39</span>
+		<div class="box-4">
+			<input type="text" class="ask" placeholder="Введите сообщение и нажмите Enter">
+		</div>
+	</div>
+	</div> 
+  		</main>
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
